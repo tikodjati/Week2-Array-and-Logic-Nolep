@@ -2,7 +2,11 @@
 function tentukanDeretAritmatika(arr) {
   // you can only write your code here
     let selisih1 = arr[1] - arr[0];
-     
+    for(let i = 1; i < arr.length - 2; i++){
+      selisih2 = arr[i+1] - arr[i];
+      if(selisih1 != selisih2) return false;
+    }
+    return true;
 }
 
 // TEST CASES
